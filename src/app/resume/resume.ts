@@ -11,11 +11,7 @@ export const CheckIfAnyTagSelected = (currentTags: TagDictionary) => {
   return anyTagSelected;
 };
 
-export const handleTagCheckedHandler = (
-  e: React.ChangeEvent<EventTarget>,
-  currentTags: TagDictionary,
-  callback: (value: React.SetStateAction<TagDictionary>) => void
-) => {
+export const handleTagCheckedHandler = (e: React.ChangeEvent<EventTarget>, currentTags: TagDictionary, callback: (value: React.SetStateAction<TagDictionary>) => void) => {
   if (e.target instanceof HTMLInputElement) {
     const { checked, value } = e.target;
     const newTag = currentTags[value];

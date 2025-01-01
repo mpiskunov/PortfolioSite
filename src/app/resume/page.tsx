@@ -3,7 +3,6 @@ import { Checkbox, Fab, FormControlLabel } from "@mui/material";
 import { Navigation } from "@mui/icons-material";
 import React, { useEffect } from "react";
 import { TagDictionary, tagDictionary } from "./tags";
-import "./style.css";
 import WorkHistoryCard from "@/components/work-history/work-history";
 import { resumePointArray, ResumePointProps } from "./resumePoints";
 import { CheckIfAnyTagSelected, handleTagCheckedHandler } from "./resume";
@@ -16,9 +15,7 @@ const SkillsPage = () => {
   const [showPills, setShowPills] = React.useState(true);
   const [currentTags, setCurrentTags] = React.useState<TagDictionary>({});
   const [resumeArr, setResumeArr] = React.useState<ResumePointProps[]>([]);
-  const [compColList, setCompColList] = React.useState<React.JSX.Element[][]>(
-    []
-  );
+  const [compColList, setCompColList] = React.useState<React.JSX.Element[][]>([]);
 
   useEffect(() => {
     setCurrentTags(tagDictionary);
@@ -34,17 +31,9 @@ const SkillsPage = () => {
       list.push(
         <FormControlLabel
           key={key}
-          control={
-            <Checkbox
-              value={value.id}
-              checked={anyTagSelected ? value.isSelected : false}
-              sx={{ "& .MuiSvgIcon-root": { fontSize: 35 } }}
-            />
-          }
+          control={<Checkbox value={value.id} checked={anyTagSelected ? value.isSelected : false} sx={{ "& .MuiSvgIcon-root": { fontSize: 35 } }} />}
           label={value.textValue}
-          onClick={(e) =>
-            handleTagCheckedHandler(e, currentTags, setCurrentTags)
-          }
+          onClick={(e) => handleTagCheckedHandler(e, currentTags, setCurrentTags)}
         />
       );
     }
@@ -66,8 +55,7 @@ const SkillsPage = () => {
       const selectedTagArr: Set<string> = new Set([]);
       for (const key in currentTags) {
         if (currentTags.hasOwnProperty(key)) {
-          if (currentTags[key].isSelected)
-            selectedTagArr.add(currentTags[key].textValue);
+          if (currentTags[key].isSelected) selectedTagArr.add(currentTags[key].textValue);
         }
       }
       // top level boolean for any tag selected
@@ -104,9 +92,7 @@ const SkillsPage = () => {
         workTitle="Senior Software Engineer"
         timeStr="October 2023 - Present"
         showPills={showPills}
-        resumePoints={resumeArr
-          .sort((item) => item.order)
-          .filter((val) => val.displayItem == true && val.grouping == "ml")}
+        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "ml")}
       />
 
       <WorkHistoryCard
@@ -114,9 +100,7 @@ const SkillsPage = () => {
         workTitle="Software Engineer"
         timeStr="September 2020 - August 2023"
         showPills={showPills}
-        resumePoints={resumeArr
-          .sort((item) => item.order)
-          .filter((val) => val.displayItem == true && val.grouping == "rm")}
+        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "rm")}
       />
 
       <WorkHistoryCard
@@ -124,9 +108,7 @@ const SkillsPage = () => {
         workTitle="Principal Engineer"
         timeStr="October 2020 - April 2022"
         showPills={showPills}
-        resumePoints={resumeArr
-          .sort((item) => item.order)
-          .filter((val) => val.displayItem == true && val.grouping == "nxt")}
+        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "nxt")}
       />
 
       <WorkHistoryCard
@@ -134,9 +116,7 @@ const SkillsPage = () => {
         workTitle="Web Application Developer"
         timeStr="September 2019 - August 2020"
         showPills={showPills}
-        resumePoints={resumeArr
-          .sort((item) => item.order)
-          .filter((val) => val.displayItem == true && val.grouping == "ri")}
+        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "ri")}
       />
 
       <WorkHistoryCard
@@ -144,9 +124,7 @@ const SkillsPage = () => {
         workTitle="Software Engineer"
         timeStr="March 2018 - September 2019"
         showPills={showPills}
-        resumePoints={resumeArr
-          .sort((item) => item.order)
-          .filter((val) => val.displayItem == true && val.grouping == "exp")}
+        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "exp")}
       />
       {anyTagSelected && (
         <Fab
@@ -165,20 +143,10 @@ const SkillsPage = () => {
           remove filters
         </Fab>
       )}
-      <Fab
-        variant="extended"
-        color="secondary"
-        sx={{ position: "fixed", bottom: "20px", right: "140px" }}
-        onClick={() => setShowPills(!showPills)}
-      >
+      <Fab variant="extended" color="secondary" sx={{ position: "fixed", bottom: "20px", right: "140px" }} onClick={() => setShowPills(!showPills)}>
         {showPills ? "hide" : "show"} all tags
       </Fab>
-      <Fab
-        variant="extended"
-        color="primary"
-        sx={{ position: "fixed", bottom: "20px", right: "20px" }}
-        onClick={() => setModalIsOpen(true)}
-      >
+      <Fab variant="extended" color="primary" sx={{ position: "fixed", bottom: "20px", right: "20px" }} onClick={() => setModalIsOpen(true)}>
         <Navigation sx={{ mr: 1 }} />
         Filters
       </Fab>

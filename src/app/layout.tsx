@@ -38,9 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <AppRouterCacheProvider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
-        >
+        <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}>
           <ThemeProvider theme={theme}>
             <HeaderSection />
             {children}

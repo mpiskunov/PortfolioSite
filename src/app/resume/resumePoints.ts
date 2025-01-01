@@ -20,23 +20,7 @@ export const resumePointArray: ResumePointProps[] = [
                 into separate, maintainable projects for multiple teams,
                 leveraging Ansible, Terraform, Gitlab, GCP, and Vault.
                 Documented the process using JIRA.`,
-    tags: new Set([
-      "cloud",
-      "gcp",
-      "aws",
-      "infrastructure",
-      "python",
-      "gitlab",
-      "pipelines",
-      "ansible",
-      "automation",
-      "terraform",
-      "vault",
-      "jira",
-      "linux",
-      "cicd",
-      "storage",
-    ]),
+    tags: new Set(["cloud", "gcp", "aws", "infrastructure", "python", "gitlab", "pipelines", "ansible", "automation", "terraform", "vault", "jira", "linux", "cicd", "storage"]),
   },
   {
     grouping: "ml",
@@ -49,19 +33,7 @@ export const resumePointArray: ResumePointProps[] = [
                 GitLab pipelines, ensuring reliable and scalable
                 notifications across multiple machine learning
                 environments.`,
-    tags: new Set([
-      "golang",
-      "infrastructure",
-      "integration",
-      "terraform",
-      "docker",
-      "containers",
-      "gitlab",
-      "cicd",
-      "pipelines",
-      "linux",
-      "machine learning",
-    ]),
+    tags: new Set(["golang", "infrastructure", "integration", "terraform", "docker", "containers", "gitlab", "cicd", "pipelines", "linux", "machine learning"]),
   },
   {
     grouping: "ml",
@@ -71,19 +43,7 @@ export const resumePointArray: ResumePointProps[] = [
                 environments, utilizing metrics analysis, service
                 recommendations, and custom Python scripts. Achieved
                 savings of over $100,000/year.`,
-    tags: new Set([
-      "golang",
-      "gcp",
-      "cloud",
-      "aws",
-      "serverless functions",
-      "system design",
-      "diagrams",
-      "python",
-      "linux",
-      "finops",
-      "storage",
-    ]),
+    tags: new Set(["golang", "gcp", "cloud", "aws", "serverless functions", "system design", "diagrams", "python", "linux", "finops", "storage"]),
   },
   {
     grouping: "ml",
@@ -94,17 +54,7 @@ export const resumePointArray: ResumePointProps[] = [
                 Cloud Functions, BigQuery, Terraform, GCP Metric
                 Explorer). This centralized dashboard provides resource
                 utilization insights for FinOps and leadership.`,
-    tags: new Set([
-      "terraform",
-      "infrastructure",
-      "cloud",
-      "gcp",
-      "grafana",
-      "serverless functions",
-      "automation",
-      "sql",
-      "python",
-    ]),
+    tags: new Set(["terraform", "infrastructure", "cloud", "gcp", "grafana", "serverless functions", "automation", "sql", "python"]),
   },
   {
     grouping: "ml",
@@ -114,18 +64,7 @@ export const resumePointArray: ResumePointProps[] = [
                 Gitlab, Bash, GCP) for machine learning engineers,
                 enabling one-click virtual machine and service
                 provisioning.`,
-    tags: new Set([
-      "terraform",
-      "cloud",
-      "gitlab",
-      "gcp",
-      "bash",
-      "automation",
-      "virtual machines",
-      "machine learning",
-      "linux",
-      "infrastructure",
-    ]),
+    tags: new Set(["terraform", "cloud", "gitlab", "gcp", "bash", "automation", "virtual machines", "machine learning", "linux", "infrastructure"]),
   },
   {
     grouping: "ml",
@@ -136,15 +75,7 @@ export const resumePointArray: ResumePointProps[] = [
                 Python, and bash scripting. Proactively adapted schedule
                 to assist engineers across diverse time zones through
                 video calls.`,
-    tags: new Set([
-      "pagerduty",
-      "machine learning",
-      "jira",
-      "python",
-      "bash",
-      "linux",
-      "gcp",
-    ]),
+    tags: new Set(["pagerduty", "machine learning", "jira", "python", "bash", "linux", "gcp"]),
   },
   {
     grouping: "ml",
@@ -154,13 +85,7 @@ export const resumePointArray: ResumePointProps[] = [
                 procedures and architectural diagrams (Lucid.app, Word,
                 JIRA), guaranteeing smooth knowledge transfer for new
                 developers and ensuring consistent operating procedures.`,
-    tags: new Set([
-      "documentation",
-      "diagrams",
-      "troubleshooting",
-      "jira",
-      "mentorship",
-    ]),
+    tags: new Set(["documentation", "diagrams", "troubleshooting", "jira", "mentorship"]),
   },
   //-----------------------------------------------------------------------------------------------------------------------
   {
@@ -169,60 +94,21 @@ export const resumePointArray: ResumePointProps[] = [
     displayItem: true,
     textValue: `Designed and implemented a high-performance, event-driven telephony orchestration application used by hundreds of bankers for
                 thousands of daily calls.`,
-    tags: new Set([
-      "c#",
-      ".net",
-      "aws",
-      "terraform",
-      "telephony",
-      "kafka",
-      "sqs",
-      "postgres",
-      "a/b testing",
-    ]),
+    tags: new Set(["c#", ".net", "aws", "terraform", "telephony", "kafka", "sqs", "postgres", "a/b testing"]),
   },
   {
     grouping: "rm",
     order: 2,
     displayItem: true,
     textValue: `Provided mentorship and created a real-time web application using React to visualize statistics and live configuration for the telephony orchestration app.`,
-    tags: new Set([
-      "troubleshooting",
-      "logging",
-      "a/b testing",
-      "collaboration",
-      "mentorship",
-      "react",
-      "cicd",
-      "c#",
-      ".net",
-      "aws",
-      "kubernetes",
-      "postgres",
-      "architecture",
-    ]),
+    tags: new Set(["troubleshooting", "logging", "a/b testing", "collaboration", "mentorship", "react", "cicd", "c#", ".net", "aws", "kubernetes", "postgres", "architecture"]),
   },
   {
     grouping: "rm",
     order: 3,
     displayItem: true,
     textValue: `Led a company-wide migration of CI/CD pipelines from TFS to CircleCI, providing code/script feedback and support to the site reliability teams.`,
-    tags: new Set([
-      "documentation",
-      "diagrams",
-      "troubleshooting",
-      "cicd",
-      "bash",
-      "c#",
-      ".net",
-      "mentorship",
-      "circleci",
-      "aws",
-      "tfs",
-      "leadership",
-      "architecture",
-      "collaboration",
-    ]),
+    tags: new Set(["documentation", "diagrams", "troubleshooting", "cicd", "bash", "c#", ".net", "mentorship", "circleci", "aws", "tfs", "leadership", "architecture", "collaboration"]),
   },
   {
     grouping: "rm",
@@ -230,16 +116,7 @@ export const resumePointArray: ResumePointProps[] = [
     displayItem: true,
     textValue: `Mentored software engineers across various levels, fostering their understanding of programming languages, functional
                 programming principles, cloud technologies, software concepts, and design patterns.`,
-    tags: new Set([
-      "diagrams",
-      "mentorship",
-      "leadership",
-      "functional programming",
-      "c#",
-      ".net",
-      "design patterns",
-      "collaboration",
-    ]),
+    tags: new Set(["diagrams", "mentorship", "leadership", "functional programming", "c#", ".net", "design patterns", "collaboration"]),
   },
   {
     grouping: "rm",
@@ -247,13 +124,7 @@ export const resumePointArray: ResumePointProps[] = [
     displayItem: true,
     textValue: `Authored a comprehensive integration testing suite using MockServer, implemented across multiple applications, and
                 delivered presentations to various teams on its setup and usage.`,
-    tags: new Set([
-      "documentation",
-      "a/b testing",
-      "kubernetes",
-      "mock-server",
-      "integration testing",
-    ]),
+    tags: new Set(["documentation", "a/b testing", "kubernetes", "mock-server", "integration testing"]),
   },
   {
     grouping: "rm",
@@ -274,13 +145,7 @@ export const resumePointArray: ResumePointProps[] = [
     order: 8,
     displayItem: true,
     textValue: `Developed hundreds of C# unit and integration tests utilizing industry-standard frameworks like XUnit.`,
-    tags: new Set([
-      "c#",
-      "unit testing",
-      ".net",
-      "integration testing",
-      "xUnit",
-    ]),
+    tags: new Set(["c#", "unit testing", ".net", "integration testing", "xUnit"]),
   },
   {
     grouping: "rm",
@@ -288,14 +153,7 @@ export const resumePointArray: ResumePointProps[] = [
     displayItem: true,
     textValue: `Automated infrastructure provisioning and deployment through Terraform for AWS services like EventBridge rules, Lambda
                 functions, S3 buckets, and more.`,
-    tags: new Set([
-      "automation",
-      "terraform",
-      "aws",
-      "cloud",
-      "serverless functions",
-      "storage",
-    ]),
+    tags: new Set(["automation", "terraform", "aws", "cloud", "serverless functions", "storage"]),
   },
   //-------------------------------------------------------------------------------------------------------------------------
   {
@@ -304,15 +162,7 @@ export const resumePointArray: ResumePointProps[] = [
     displayItem: true,
     textValue: `Led the design, architecture, and development of a brand new on-demand moving application from the ground up, leveraging
 a microservices architecture pattern for scalability and maintainability.`,
-    tags: new Set([
-      "architecture",
-      "c#",
-      ".net",
-      "microservices",
-      "system design",
-      "leadership",
-      "diagrams",
-    ]),
+    tags: new Set(["architecture", "c#", ".net", "microservices", "system design", "leadership", "diagrams"]),
   },
   {
     grouping: "nxt",
@@ -327,27 +177,14 @@ tasks.`,
     order: 3,
     displayItem: true,
     textValue: `Fostered code quality through peer reviews and code management using GitHub.`,
-    tags: new Set([
-      "documentation",
-      "code review",
-      "c#",
-      ".net",
-      "mentorship",
-      "collaboration",
-    ]),
+    tags: new Set(["documentation", "code review", "c#", ".net", "mentorship", "collaboration"]),
   },
   {
     grouping: "nxt",
     order: 4,
     displayItem: true,
     textValue: `Mentored and guided other software engineers in technical design principles and architectural patterns.`,
-    tags: new Set([
-      "mentorship",
-      "architecture",
-      "collaboration",
-      "leadership",
-      "diagrams",
-    ]),
+    tags: new Set(["mentorship", "architecture", "collaboration", "leadership", "diagrams"]),
   },
   {
     grouping: "nxt",
@@ -355,17 +192,7 @@ tasks.`,
     displayItem: true,
     textValue: `Developed all application layers - front-end (React.js), back-end (.NET Core 5, EF Core), database (MySQL), security
 (Auth0), and container management (Docker).`,
-    tags: new Set([
-      "documentation",
-      "system design",
-      "react",
-      "c#",
-      ".net",
-      "mysql",
-      "auth0",
-      "docker",
-      "containers",
-    ]),
+    tags: new Set(["documentation", "system design", "react", "c#", ".net", "mysql", "auth0", "docker", "containers"]),
   },
   {
     grouping: "nxt",
@@ -380,14 +207,7 @@ tasks.`,
     order: 7,
     displayItem: true,
     textValue: `Created a reusable notification library (email and SMS) for secure use across all applications.`,
-    tags: new Set([
-      "c#",
-      ".net",
-      "integrations",
-      "security",
-      "automation",
-      "api",
-    ]),
+    tags: new Set(["c#", ".net", "integrations", "security", "automation", "api"]),
   },
   {
     grouping: "nxt",
@@ -403,16 +223,7 @@ tasks.`,
     displayItem: true,
     textValue: `Designed, built, and deployed a full-stack web application for an internal construction management system. Utilized Agile methodology (JIRA, Azure DevOps
                 Boards) for efficient project management.`,
-    tags: new Set([
-      "c#",
-      ".net",
-      "razor",
-      "telerik",
-      "sql",
-      "jira",
-      "azure",
-      "cloud",
-    ]),
+    tags: new Set(["c#", ".net", "razor", "telerik", "sql", "jira", "azure", "cloud"]),
   },
   {
     grouping: "ri",
@@ -453,15 +264,7 @@ tasks.`,
     displayItem: true,
     textValue: `Collaborated in a development team to build, maintain, and enhance a web-based student travel application (ASP.NET Web
                 Forms, Sitecore CMS, MSSQL, Azure DevOps).`,
-    tags: new Set([
-      "c#",
-      ".net",
-      "sitecore",
-      "sql",
-      "azure",
-      "cloud",
-      "full stack",
-    ]),
+    tags: new Set(["c#", ".net", "sitecore", "sql", "azure", "cloud", "full stack"]),
   },
   {
     grouping: "exp",
@@ -477,11 +280,6 @@ tasks.`,
     displayItem: true,
     textValue: `Dedicated weekly Service Desk hours to address critical bugs. This involved efficient bug capture, testing, and timely
                 implementation of fixes.`,
-    tags: new Set([
-      "pagerduty",
-      "troubleshooting",
-      "collaboration",
-      "code review",
-    ]),
+    tags: new Set(["pagerduty", "troubleshooting", "collaboration", "code review"]),
   },
 ];

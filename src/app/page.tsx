@@ -22,21 +22,12 @@ export default function Home() {
           <Grid2 container spacing={2} padding={4}>
             <Grid2 size={{ xs: 12, sm: 4 }}>
               <Item>
-                <Rating
-                  name="half-rating-read"
-                  defaultValue={2.5}
-                  precision={0.5}
-                  readOnly
-                />
+                <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
               </Item>
             </Grid2>
             <Grid2 size={4}>
               <Item>
-                <Avatar
-                  alt="Matthew Piskunov"
-                  src="/static/images/avatar/1.jpg"
-                  sx={{ width: 250, height: 250 }}
-                />
+                <Avatar alt="Matthew Piskunov" src="/static/images/avatar/1.jpg" sx={{ width: 250, height: 250 }} />
               </Item>
             </Grid2>
             <Grid2 size={4}>
