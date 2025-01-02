@@ -13,7 +13,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Link from "next/link";
-
 const drawerWidth = 240;
 const navItems = [
   {
@@ -72,7 +71,7 @@ export default function HeaderSection(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav" position="sticky">
+      <AppBar component="nav" position="sticky" sx={{ bgcolor: `background.default` }}>
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ mr: 2, display: { sm: "none" } }}>
             <MenuIcon />

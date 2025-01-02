@@ -10,9 +10,10 @@ interface WorkHistoryCardProps {
   timeStr: string;
   resumePoints: ResumePointProps[];
   showPills: boolean;
+  currentSelectedTags: Set<string>;
 }
 
-export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePoints, showPills }: WorkHistoryCardProps) {
+export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePoints, showPills, currentSelectedTags }: WorkHistoryCardProps) {
   const Root = styled("div")(({ theme }) => ({
     width: "100%",
     ...theme.typography.body2,
@@ -33,7 +34,7 @@ export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePo
               alignItems: "end",
             }}
           >
-            <Image src={imageSrc} alt={"Magic Leap, Inc."} width={200} height={200}></Image>
+            <Image src={imageSrc} alt={"Magic Leap, Inc."} width={125} height={125}></Image>
           </Grid2>
           <Divider orientation="vertical" flexItem />
           <Grid2 size={{ xs: 12, md: 9 }} sx={{ pl: 2 }}>
@@ -72,7 +73,7 @@ export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePo
                           {showPills &&
                             Array.from(val.tags)
                               .sort()
-                              .map((item, index) => <Chip label={item} key={index} />)}
+                              .map((item, index) => <Chip label={item} key={index} color={currentSelectedTags.has(item) ? "primary" : "default"} />)}
                         </ListItem>
                       );
                     })}

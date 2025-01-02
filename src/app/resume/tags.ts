@@ -299,11 +299,6 @@ export const tagDictionary: TagDictionary = {
     textValue: "sqs",
     isSelected: false,
   },
-  storage: {
-    id: "storage",
-    textValue: "storage",
-    isSelected: false,
-  },
   "system-design": {
     id: "system-design",
     textValue: "system design",

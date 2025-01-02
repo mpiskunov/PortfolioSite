@@ -20,7 +20,7 @@ export const resumePointArray: ResumePointProps[] = [
                 into separate, maintainable projects for multiple teams,
                 leveraging Ansible, Terraform, Gitlab, GCP, and Vault.
                 Documented the process using JIRA.`,
-    tags: new Set(["cloud", "gcp", "aws", "infrastructure", "python", "gitlab", "pipelines", "ansible", "automation", "terraform", "vault", "jira", "linux", "cicd", "storage"]),
+    tags: new Set(["cloud", "gcp", "aws", "infrastructure", "python", "gitlab", "pipelines", "ansible", "automation", "terraform", "vault", "jira", "linux", "cicd", "cloud storage"]),
   },
   {
     grouping: "ml",
@@ -43,7 +43,7 @@ export const resumePointArray: ResumePointProps[] = [
                 environments, utilizing metrics analysis, service
                 recommendations, and custom Python scripts. Achieved
                 savings of over $100,000/year.`,
-    tags: new Set(["golang", "gcp", "cloud", "aws", "serverless functions", "system design", "diagrams", "python", "linux", "finops", "storage"]),
+    tags: new Set(["golang", "gcp", "cloud", "aws", "serverless functions", "system design", "diagrams", "python", "linux", "finops", "cloud storage"]),
   },
   {
     grouping: "ml",
@@ -153,7 +153,7 @@ export const resumePointArray: ResumePointProps[] = [
     displayItem: true,
     textValue: `Automated infrastructure provisioning and deployment through Terraform for AWS services like EventBridge rules, Lambda
                 functions, S3 buckets, and more.`,
-    tags: new Set(["automation", "terraform", "aws", "cloud", "serverless functions", "storage"]),
+    tags: new Set(["automation", "terraform", "aws", "cloud", "serverless functions", "cloud storage"]),
   },
   //-------------------------------------------------------------------------------------------------------------------------
   {
