@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import HeaderSection from "@/components/header/header";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { Roboto } from "next/font/google";
 import { ThemeProvider } from "@mui/material/styles";
@@ -36,11 +35,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet" />
+      </head>
       <AppRouterCacheProvider>
         <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}>
           <ThemeProvider theme={theme}>
-            <HeaderSection />
+            {/* <HeaderSection /> */}
             {children}
           </ThemeProvider>
         </body>

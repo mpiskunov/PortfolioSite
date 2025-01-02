@@ -39,7 +39,7 @@ export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePo
           <Divider orientation="vertical" flexItem />
           <Grid2 size={{ xs: 12, md: 9 }} sx={{ pl: 2 }}>
             <Typography
-              variant="h5"
+              variant="h3"
               sx={{
                 display: "flex",
                 alignItems: "end",
@@ -69,11 +69,19 @@ export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePo
                     {resumePoints.map((val, i) => {
                       return (
                         <ListItem sx={{ display: "list-item" }} key={i}>
-                          <Typography>{val.textValue}</Typography>{" "}
+                          <Typography variant="h5">{val.textValue}</Typography>{" "}
                           {showPills &&
                             Array.from(val.tags)
                               .sort()
-                              .map((item, index) => <Chip label={item} key={index} color={currentSelectedTags.has(item) ? "primary" : "default"} />)}
+                              .map((item, index) => (
+                                <Chip
+                                  size="medium"
+                                  sx={{ fontSize: "20px" }}
+                                  label={item}
+                                  key={index}
+                                  color={currentSelectedTags.has(item) ? "primary" : "default"}
+                                />
+                              ))}
                         </ListItem>
                       );
                     })}

@@ -14,7 +14,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "var(--font-roboto)",
+    fontFamily: "Darker Grotesque",
   },
 });
 
