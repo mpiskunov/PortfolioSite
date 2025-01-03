@@ -51,7 +51,13 @@ export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePo
             </Typography>
           </Grid2>
           <Root>
-            <Divider textAlign="right">{timeStr}</Divider>
+            <Divider textAlign="right">
+              {
+                <Typography variant="subtitle1">
+                  <strong>{timeStr}</strong>
+                </Typography>
+              }
+            </Divider>
           </Root>
         </Grid2>
         <Grid2 size={{ xs: 12 }} sx={{ pt: 2 }}>
@@ -73,15 +79,7 @@ export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePo
                           {showPills &&
                             Array.from(val.tags)
                               .sort()
-                              .map((item, index) => (
-                                <Chip
-                                  size="medium"
-                                  sx={{ fontSize: "20px" }}
-                                  label={item}
-                                  key={index}
-                                  color={currentSelectedTags.has(item) ? "primary" : "default"}
-                                />
-                              ))}
+                              .map((item, index) => <Chip size="medium" sx={{ fontSize: "20px" }} label={item} key={index} color={currentSelectedTags.has(item) ? "primary" : "default"} />)}
                         </ListItem>
                       );
                     })}
