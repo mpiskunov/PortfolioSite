@@ -1,4 +1,4 @@
-import { ResumePointProps } from "@/app/resume/resumePoints";
+import { ResumePointProps } from "@/app/resume-interactive/resumePoints";
 import { ExpandMore } from "@mui/icons-material";
 import { Paper, Grid2, Divider, Typography, Accordion, AccordionSummary, AccordionDetails, List, ListItem, styled, Chip } from "@mui/material";
 import * as React from "react";
@@ -79,7 +79,15 @@ export default function WorkHistoryCard({ imageSrc, workTitle, timeStr, resumePo
                           {showPills &&
                             Array.from(val.tags)
                               .sort()
-                              .map((item, index) => <Chip size="medium" sx={{ fontSize: "20px" }} label={item} key={index} color={currentSelectedTags.has(item) ? "primary" : "default"} />)}
+                              .map((item, index) => (
+                                <Chip
+                                  size="medium"
+                                  sx={{ fontSize: "20px" }}
+                                  label={item}
+                                  key={index}
+                                  color={currentSelectedTags.has(item) ? "primary" : "default"}
+                                />
+                              ))}
                         </ListItem>
                       );
                     })}
