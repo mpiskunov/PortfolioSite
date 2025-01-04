@@ -31,10 +31,10 @@ const navItems = [
     title: "testimonials",
     href: "/testimonials",
   },
-  {
-    title: "goats",
-    href: "/goats",
-  },
+  // {
+  //   title: "goats",
+  //   href: "/goats",
+  // },
 ];
 
 interface Props {

@@ -75,11 +75,11 @@ export default function Home() {
                   testimonials
                 </Typography>
               </Link>
-              <Link href={"/resume"} className="hover-link">
+              {/* <Link href={"/resume"} className="hover-link">
                 <Typography variant="h4" pt={2} color="white">
                   goats?
                 </Typography>
-              </Link>
+              </Link> */}
             </Grid2>
           </Grid2>
         </Stack>
