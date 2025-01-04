@@ -16,25 +16,30 @@ import Link from "next/link";
 const drawerWidth = 240;
 const navItems = [
   {
-    title: "Home",
+    title: "home",
     href: "/",
   },
   {
-    title: "Resume",
+    title: "resume",
     href: "/resume",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "portfolio",
+    href: "/portfolio",
+  },
+  {
+    title: "testimonials",
+    href: "/testimonials",
+  },
+  {
+    title: "goats",
+    href: "/goats",
   },
 ];
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window?: () => Window;
+  isSticky?: boolean;
 }
 
 export default function HeaderSection(props: Props) {
@@ -46,17 +51,17 @@ export default function HeaderSection(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", bgcolor: "background.default" }}>
+      <Typography variant="h6" sx={{ my: 2 }} color="white">
         MP Portfolio
       </Typography>
       <Divider />
-      <List>
+      <List sx={{ bgcolor: "background.default" }}>
         {navItems.map((item) => (
           <Link href={item.href} key={item.title}>
             <ListItem disablePadding>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <Typography color="textPrimary" variant="h6">
+                <Typography color="white" variant="h6">
                   {item.title}
                 </Typography>
               </ListItemButton>
@@ -70,19 +75,21 @@ export default function HeaderSection(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" }} className={props.isSticky ? "sticky" : ""} zIndex={1000}>
       <AppBar component="nav" position="sticky" sx={{ bgcolor: `background.default` }}>
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ mr: 2, display: { sm: "none" } }}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-            Matthew Piskunov&apos;s Portfolio
+          <Typography color="white" variant="h5" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+            Matthew Piskunov | Portfolio
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Link key={item.title} href={item.href}>
-                <Button sx={{ color: "inherit" }}>{item.title}</Button>
+                <Button sx={{ color: "inherit" }}>
+                  <Typography color="white">{item.title}</Typography>
+                </Button>
               </Link>
             ))}
           </Box>

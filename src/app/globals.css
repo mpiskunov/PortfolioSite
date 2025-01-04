@@ -68,6 +68,17 @@ body {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.MuiDrawer-paper {
+  background-color: #2f4858 !important;
+}
+
 /* // generic color palette
 //#8fbc8b
 //#68a68a

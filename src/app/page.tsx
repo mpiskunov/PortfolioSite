@@ -6,6 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SkillBlock from "@/components/skill-block/skill-block";
+import HeaderSection from "@/components/header/header";
 
 export default function Home() {
   const Root = styled("div")(({ theme }) => ({
@@ -20,6 +21,7 @@ export default function Home() {
 
   return (
     <>
+      <HeaderSection />
       <Box sx={{ width: "100%" }}>
         <Stack direction="row" justifyContent="center" alignItems="center" sx={{ height: "100vh", minHeight: "800px" }}>
           <Grid2 container justifyContent={"center"} maxWidth={"md"}>
@@ -29,12 +31,12 @@ export default function Home() {
               </div>
             </Grid2>
             <Grid2 size={{ xs: 12 }} pt={2}>
-              <Typography variant="h3" align="center">
+              <Typography variant="h3" align="center" color="white">
                 Matthew Piskunov
               </Typography>
             </Grid2>
             <Grid2 size={{ xs: 12 }}>
-              <Typography variant="h4" align="center">
+              <Typography variant="h4" align="center" color="white">
                 engineer, consultant, and mentor.
               </Typography>
             </Grid2>
@@ -58,21 +60,23 @@ export default function Home() {
             </Grid2>
             <Grid2 size={{ xs: 2 }}></Grid2>
             <Grid2 size={{ xs: 4 }} pt={3} textAlign={"center"}>
-              <Link href={"/resume-pdf"} className="hover-link">
-                <Typography variant="h4" pb={2}>
-                  resume (pdf)
+              <Link href={"/resume"} className="hover-link">
+                <Typography variant="h4" pb={2} color="white">
+                  resume
                 </Typography>
               </Link>
-              <Link href={"/resume-interactive"} className="hover-link">
-                <Typography variant="h4">resume (interactive)</Typography>
+              <Link href={"/portfolio"} className="hover-link">
+                <Typography variant="h4" color="white">
+                  portfolio
+                </Typography>
               </Link>
               <Link href={"/testimonials"} className="hover-link">
-                <Typography variant="h4" pt={2}>
+                <Typography variant="h4" pt={2} color="white">
                   testimonials
                 </Typography>
               </Link>
               <Link href={"/resume"} className="hover-link">
-                <Typography variant="h4" pt={2}>
+                <Typography variant="h4" pt={2} color="white">
                   goats?
                 </Typography>
               </Link>
@@ -86,11 +90,11 @@ export default function Home() {
             </Typography>
             <Typography variant="h4" pb={2}>
               My name is <strong>Matthew Piskunov</strong> and I crafted this website using <strong>next.js</strong>! I am passionate and curious about technology and solving complex issues that can
-              be intimidating by nature. Through my professional career, I&apos;ve been interested in full stack technologies, curating safe and collaborative environments for my colleagues, and
-              providing mentorships and demos to others.
+              be intimidating by nature. Through my professional career, I&apos;ve lead small teams for mission critical apps, been interested in full stack technologies, curating safe and
+              collaborative environments for my colleagues, and providing mentorships and demos for all individuals.
             </Typography>
             <Typography variant="h4" py={2}>
-              <strong>If I don&apos;t know a technology, I learn it. If I already know that technology, then I automate it.</strong>
+              <strong>If I don&apos;t know a technology, I&apos;ll learn it. If I already know that technology, then I&apos;ll automate it.</strong>
             </Typography>
             <Typography variant="h4" pb={2}>
               Whenever I have time to myself, I enjoy trying new technologies, building physical structures and renovating rooms on my property, and hanging out with all my animals.
