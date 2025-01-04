@@ -85,68 +85,56 @@ export default function Home() {
               Hello, folks!
             </Typography>
             <Typography variant="h4" pb={2}>
-              My name is <strong>Matthew Piskunov</strong> and I crafted this website using <strong>next.js</strong>! I am passionate and curious
-              about technology and solving complex issues that can be intimidating by nature. Through my professional career, I&apos;ve been
-              interested in full stack technologies, curating safe and collaborative environments for my colleagues, and providing mentorships and
-              demos to others.
+              My name is <strong>Matthew Piskunov</strong> and I crafted this website using <strong>next.js</strong>! I am passionate and curious about technology and solving complex issues that can
+              be intimidating by nature. Through my professional career, I&apos;ve been interested in full stack technologies, curating safe and collaborative environments for my colleagues, and
+              providing mentorships and demos to others.
             </Typography>
             <Typography variant="h4" py={2}>
               <strong>If I don&apos;t know a technology, I learn it. If I already know that technology, then I automate it.</strong>
             </Typography>
             <Typography variant="h4" pb={2}>
-              Whenever I have time to myself, I enjoy trying new technologies, building physical structures and renovating rooms on my property, and
-              hanging out with all my animals.
+              Whenever I have time to myself, I enjoy trying new technologies, building physical structures and renovating rooms on my property, and hanging out with all my animals.
             </Typography>
             <Typography variant="h4"> Dogs & chickens & goats, oh my!</Typography>
           </Grid2>
 
           <Grid2 size={{ lg: 3 }} sx={{ display: { md: "none", lg: "block" } }} p={5}>
-            <Image
-              src={"/goats.jpg"}
-              alt={"goats"}
-              objectFit="contain"
-              width={400}
-              height={400}
-              style={{ border: "2px solid black", borderRadius: "10px" }}
-            ></Image>
+            <Image src={"/goats.jpg"} alt={"goats"} objectFit="contain" width={400} height={400} style={{ border: "2px solid black", borderRadius: "10px" }}></Image>
           </Grid2>
         </Grid2>
         <Grid2 container sx={{ bgcolor: `background.default` }} justifyContent={"center"} spacing={2} borderTop={"solid 1px black"} py={7} px={3}>
           <SkillBlock rating={4} title="front-end">
-            I&apos;ve created fully functioning websites using technologies like <strong>React</strong>, <strong>Angular</strong>,{" "}
-            <strong>Razor</strong>, and <strong>Next.js</strong> (as well as plain old <strong>HTML</strong> & <strong>JavaScript</strong>).
+            I&apos;ve created fully functioning websites using technologies like <strong>React</strong>, <strong>Angular</strong>, <strong>Razor</strong>, and <strong>Next.js</strong> (as well as
+            plain vanilla <strong>HTML</strong> & <strong>JavaScript</strong>).
           </SkillBlock>
           <SkillBlock rating={4.5} title="back-end">
-            My usual stack involves <strong>C#/.NET</strong>, however, I am very comfortable with working in <strong>Golang</strong>,{" "}
-            <strong>Node.js</strong>, and <strong>Python</strong> applications. These frameworks have been used for architectures such as{" "}
-            <strong>APIs</strong>, <strong>microservices</strong>, <strong>monolithic apps</strong>, and <strong>command line tools</strong>.
+            My usual stack involves <strong>C#/.NET</strong>, however, I am very comfortable with working in <strong>Golang</strong>, <strong>Node.js</strong>, and <strong>Python</strong>{" "}
+            applications. These frameworks have been used for architectures such as <strong>APIs</strong>, <strong>microservices</strong>, <strong>monolithic apps</strong>, and{" "}
+            <strong>command line tools</strong>.
           </SkillBlock>
           <SkillBlock rating={4.5} title="ci/cd">
-            CI/CD is one of my favorite areas of expertise, as I have created reusable build/deploy jobs in <strong>CircleCI</strong>,{" "}
-            <strong>Gitlab Pipelines</strong>, <strong>MSBuild</strong>, <strong>Azure Pipelines</strong>, and <strong>Jenkins</strong> for other
-            teams to use.
+            CI/CD is one of my favorite areas of expertise, as I have created reusable build/deploy jobs in <strong>CircleCI</strong>, <strong>Gitlab Pipelines</strong>, <strong>MSBuild</strong>,{" "}
+            <strong>Azure Pipelines</strong>, and <strong>Jenkins</strong> for other teams to use.
           </SkillBlock>
           <SkillBlock rating={4} title="devops">
-            A length of my career was geared towards DevOps. I&apos;ve helped machine learning teams with their workloads by provisioning their{" "}
-            <strong>cloud environments</strong>, providing <strong>documentation</strong> and <strong>diagrams</strong>, and{" "}
-            <strong>troubleshooting</strong> Linux-based VMs via <strong>bash/ansible scripting</strong>.
+            A length of my career was geared towards DevOps. I&apos;ve helped machine learning teams with their workloads by provisioning their <strong>cloud environments</strong>, providing{" "}
+            <strong>documentation</strong> and <strong>diagrams</strong>, and <strong>troubleshooting</strong> Linux-based VMs via <strong>bash/ansible scripting</strong>.
           </SkillBlock>
           <SkillBlock rating={4} title="cloud">
-            I have professional and actionable knowledge with <strong>GCP</strong>, <strong>AWS</strong>, and <strong>Azure</strong> (in that order).
-            I&apos;ve provisioned and architected resources such as <strong>IAM</strong>, <strong>serverless functions</strong>,{" "}
-            <strong>buckets</strong>, and much more!
+            I have professional and actionable knowledge with <strong>GCP</strong>, <strong>AWS</strong>, and <strong>Azure</strong> (in that order). I&apos;ve provisioned and architected resources
+            such as <strong>IAM</strong>, <strong>serverless functions</strong>, <strong>buckets</strong>, and much more!
           </SkillBlock>
           <SkillBlock rating={4.5} title="infrastructure">
-            I&apos;ve automated frameworks such as <strong>Terraform</strong>, <strong>Ansible</strong>, <strong>Docker</strong>,{" "}
-            <strong>Helm</strong>, <strong>Kubernetes</strong>, and other processes to help speedline development & deployment for my team and others.
+            I&apos;ve automated frameworks such as <strong>Terraform</strong>, <strong>Ansible</strong>, <strong>Docker</strong>, <strong>Helm</strong>, <strong>Kubernetes</strong>, and other
+            processes to help speedline development & deployment for my team and others.
           </SkillBlock>
           <SkillBlock rating={5} title="mentorships">
             By providing <strong>mentorships</strong> to numerous people in my career, I&apos;ve been able to help these colleagues grow and &#34;
             <strong>level up</strong>&#34; within their personal careers. This, to me, is one the most important skills that I hone!
           </SkillBlock>
           <SkillBlock rating={3} title="wood-working">
-            Because my house is almost 300 years old, I have lots of renovation work ahead of me! Even though I&apos;m not the best at building
-            things, I&apos;m always working towards to improve my skills.
+            Because my house is almost 300 years old, I have lots of renovation work ahead of me! Even though I&apos;m not the best at building things, I&apos;m always working towards to improve my
+            skills.
           </SkillBlock>
         </Grid2>
       </Box>
