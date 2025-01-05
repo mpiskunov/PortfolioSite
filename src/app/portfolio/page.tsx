@@ -1,5 +1,5 @@
 "use client";
-import { Checkbox, Fab, FormControlLabel } from "@mui/material";
+import { Checkbox, Fab, FormControlLabel, Box } from "@mui/material";
 import { Navigation } from "@mui/icons-material";
 import React, { useEffect } from "react";
 import { TagDictionary, tagDictionary } from "./tags";
@@ -90,6 +90,7 @@ const SkillsPage = () => {
   return (
     <>
       <HeaderSection isSticky={true} />
+      <Box pt={5} />
       <WorkHistoryCard
         imageSrc="/magicleap.png"
         workTitle="Senior Software Engineer"
