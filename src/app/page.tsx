@@ -89,17 +89,18 @@ export default function Home() {
               Hello, folks!
             </Typography>
             <Typography variant="h4" pb={2}>
-              My name is <strong>Matthew Piskunov</strong> and I crafted this website using <strong>next.js</strong>! I am a{" "}
-              <strong>software engineer</strong> who is passionate and curious about technology and solving complex issues that can be intimidating by
-              nature. Through my professional career, I&apos;ve lead small teams for mission critical apps, been interested in full stack
-              technologies, curating safe and collaborative environments for my colleagues, and providing mentorships and demos for all individuals.
+              My name is <strong>Matthew Piskunov</strong> and I created this website using <strong>next.js</strong>! I am a{" "}
+              <strong>software engineer</strong> who is passionate and curious about technology and solving complex, sometimes intimidating issues.
+              Throughout my professional career, I&apos;ve lead small teams for mission critical apps, worked with multiple full stack technologies,
+              fostered safe and collaborative environments for my colleagues, and provided mentorships and demos for all individuals. I am always
+              interested in learning new full stack technologies, and finding better and more efficient ways to do things!
             </Typography>
             <Typography variant="h4" py={2}>
-              <strong>If I don&apos;t know a technology, I&apos;ll learn it. If I already know that technology, then I&apos;ll automate it.</strong>
+              <strong>If I don&apos;t know a technology, I&apos;ll learn it. If I already know it, then I&apos;ll automate it.</strong>
             </Typography>
             <Typography variant="h4" pb={2}>
-              Whenever I have time to myself, I enjoy trying new technologies, building physical structures and renovating rooms on my property, and
-              hanging out with all my animals.
+              Whenever I have time to myself, I enjoy working on personal coding projects to enhance my knowledge of new coding languages, building
+              physical structures and renovating rooms on my property, and hanging out with all my animals.
             </Typography>
             <Typography variant="h4"> Dogs & chickens & goats, oh my!</Typography>
           </Grid2>
