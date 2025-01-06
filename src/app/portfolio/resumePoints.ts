@@ -351,3 +351,43 @@ tasks.`,
     tags: new Set(["pagerduty", "troubleshooting", "collaboration", "code review"]),
   },
 ];
+
+export interface ResumeSkillSummary {
+  grouping: string;
+  cloudSkillsText: string;
+  languageSkillsText: string;
+  frameworkSkillsText: string;
+}
+
+export const resumeSkillSummaries: ResumeSkillSummary[] = [
+  {
+    grouping: "ml",
+    cloudSkillsText: "GCP, AWS",
+    languageSkillsText: "Terraform, Golang, Docker, Ansible, Python",
+    frameworkSkillsText: "Gitlab, Kubernetes, Hashicorp Vault, Grafana, JIRA, PagerDuty",
+  },
+  {
+    grouping: "rm",
+    cloudSkillsText: "AWS, Azure",
+    languageSkillsText: "C#, React/Angular, SQL, Terraform",
+    frameworkSkillsText: ".NET, GitHub, Kubernetes, Grafana, JIRA, PagerDuty",
+  },
+  {
+    grouping: "nxt",
+    cloudSkillsText: "AWS",
+    languageSkillsText: "C#, React, Docker, SQL, Terraform",
+    frameworkSkillsText: ".NET, GitHub, Kubernetes, Auth0, Trello",
+  },
+  {
+    grouping: "ri",
+    cloudSkillsText: "Azure",
+    languageSkillsText: "C#, HTML/JavaScript, SQL",
+    frameworkSkillsText: ".NET, Razor Pages, GitHub, JIRA",
+  },
+  {
+    grouping: "exp",
+    cloudSkillsText: "Azure",
+    languageSkillsText: "C#, HTML/JavaScript, SQL",
+    frameworkSkillsText: ".NET, GitHub, JIRA, PagerDuty",
+  },
+];
