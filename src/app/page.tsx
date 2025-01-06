@@ -70,11 +70,11 @@ export default function Home() {
                   portfolio
                 </Typography>
               </Link>
-              <Link href={"/testimonials"} className="hover-link">
+              {/* <Link href={"/testimonials"} className="hover-link">
                 <Typography variant="h4" pt={2} color="white">
                   testimonials
                 </Typography>
-              </Link>
+              </Link> */}
               {/* <Link href={"/resume"} className="hover-link">
                 <Typography variant="h4" pt={2} color="white">
                   goats?

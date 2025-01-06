@@ -27,10 +27,10 @@ const navItems = [
     title: "portfolio",
     href: "/portfolio",
   },
-  {
-    title: "testimonials",
-    href: "/testimonials",
-  },
+  // {
+  //   title: "testimonials",
+  //   href: "/testimonials",
+  // },
   // {
   //   title: "goats",
   //   href: "/goats",
