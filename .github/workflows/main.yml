@@ -19,8 +19,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           context: . # Path to the Dockerfile
           push: true # Push the built image to Docker Hub
-          tags: ${{ vars.DOCKER_USERNAME }}/portfolio-site:latest ${{ vars.DOCKER_USERNAME }}/portfolio-site:${{ github.sha }}
+          tags: |
+            ${{ vars.DOCKER_USERNAME }}/portfolio-site:latest 
+            ${{ vars.DOCKER_USERNAME }}/portfolio-site:${{ github.sha }}
