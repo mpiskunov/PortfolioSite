@@ -1,5 +1,5 @@
 "use client";
-import { Checkbox, Fab, FormControlLabel, Box } from "@mui/material";
+import { Checkbox, Fab, FormControlLabel, Box, Grid2 } from "@mui/material";
 import { Navigation } from "@mui/icons-material";
 import React, { useEffect } from "react";
 import { TagDictionary } from "./tags";
@@ -89,57 +89,60 @@ const PortfolioPage = ({ tags, resumeArr, resumeSummaries }: PortfolioPageProps)
 
   return (
     <>
-      <HeaderSection isSticky={true} />
-      <Box pt={5} />
-      <WorkHistoryCard
-        imageSrc="/magicleap.png"
-        workTitle="Senior Software Engineer"
-        timeStr="October 2023 - Present"
-        showPills={showPills}
-        resumePoints={currentResumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "ml")}
-        resumeSkillSummary={currentResumeSummaries.find((x) => x.grouping == "ml")}
-        currentSelectedTags={currentSelectedTags}
-      />
+      <HeaderSection isSticky={false} />
+      <Box pt={2} />
+      <Grid2 container alignItems="center" justifyContent="center">
+        <Grid2 size={{ xs: 12, lg: 8 }}>
+          <WorkHistoryCard
+            imageSrc="/magicleap.png"
+            workTitle="Senior Software Engineer"
+            timeStr="October 2023 - Present"
+            showPills={showPills}
+            resumePoints={currentResumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "ml")}
+            resumeSkillSummary={currentResumeSummaries.find((x) => x.grouping == "ml")}
+            currentSelectedTags={currentSelectedTags}
+          />
+          <WorkHistoryCard
+            imageSrc="/rm.png"
+            workTitle="Software Engineer"
+            timeStr="September 2020 - August 2023"
+            showPills={showPills}
+            resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "rm")}
+            resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "rm")}
+            currentSelectedTags={currentSelectedTags}
+          />
 
-      <WorkHistoryCard
-        imageSrc="/rm.png"
-        workTitle="Software Engineer"
-        timeStr="September 2020 - August 2023"
-        showPills={showPills}
-        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "rm")}
-        resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "rm")}
-        currentSelectedTags={currentSelectedTags}
-      />
+          <WorkHistoryCard
+            imageSrc="/nxtgen.png"
+            workTitle="Principal Engineer"
+            timeStr="October 2020 - April 2022"
+            showPills={showPills}
+            resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "nxt")}
+            resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "nxt")}
+            currentSelectedTags={currentSelectedTags}
+          />
 
-      <WorkHistoryCard
-        imageSrc="/nxtgen.png"
-        workTitle="Principal Engineer"
-        timeStr="October 2020 - April 2022"
-        showPills={showPills}
-        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "nxt")}
-        resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "nxt")}
-        currentSelectedTags={currentSelectedTags}
-      />
+          <WorkHistoryCard
+            imageSrc="/rihousing.png"
+            workTitle="Web Application Developer"
+            timeStr="September 2019 - August 2020"
+            showPills={showPills}
+            resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "ri")}
+            resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "ri")}
+            currentSelectedTags={currentSelectedTags}
+          />
 
-      <WorkHistoryCard
-        imageSrc="/rihousing.png"
-        workTitle="Web Application Developer"
-        timeStr="September 2019 - August 2020"
-        showPills={showPills}
-        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "ri")}
-        resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "ri")}
-        currentSelectedTags={currentSelectedTags}
-      />
-
-      <WorkHistoryCard
-        imageSrc="/explorica.png"
-        workTitle="Software Engineer"
-        timeStr="March 2018 - September 2019"
-        showPills={showPills}
-        resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "exp")}
-        resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "exp")}
-        currentSelectedTags={currentSelectedTags}
-      />
+          <WorkHistoryCard
+            imageSrc="/explorica.png"
+            workTitle="Software Engineer"
+            timeStr="March 2018 - September 2019"
+            showPills={showPills}
+            resumePoints={resumeArr.sort((item) => item.order).filter((val) => val.displayItem == true && val.grouping == "exp")}
+            resumeSkillSummary={resumeSummaries.find((x) => x.grouping == "exp")}
+            currentSelectedTags={currentSelectedTags}
+          />
+        </Grid2>
+      </Grid2>
       {anyTagSelected && (
         <Fab
           variant="extended"
