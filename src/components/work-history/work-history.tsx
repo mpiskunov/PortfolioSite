@@ -1,8 +1,7 @@
 import { ResumePointProps, ResumeSkillSummary } from "@/app/portfolio/resumePoints";
-import { Paper, Grid2, Divider, Typography, Accordion, AccordionSummary, AccordionDetails, List, ListItem, styled, Chip, Button } from "@mui/material";
+import { Paper, Grid2, Divider, Typography, Accordion, AccordionDetails, List, ListItem, styled, Chip, Button } from "@mui/material";
 import * as React from "react";
 import Image from "next/image";
-import { ExpandMore } from "@mui/icons-material";
 
 interface WorkHistoryCardProps {
   imageSrc: string;
