@@ -23,6 +23,4 @@ jobs:
         with:
           context: . # Path to the Dockerfile
           push: true # Push the built image to Docker Hub
-          tags:
-            - ${{ vars.DOCKER_USERNAME }}/portfolio-site:latest
-            - ${{ vars.DOCKER_USERNAME }}/portfolio-site:${{ github.sha }}
+          tags: ${{ vars.DOCKER_USERNAME }}/portfolio-site:latest ${{ vars.DOCKER_USERNAME }}/portfolio-site:${{ github.sha }}
