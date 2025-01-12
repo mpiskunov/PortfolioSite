@@ -37,12 +37,12 @@ export default function Home() {
             </Grid2>
             <Grid2 size={{ xs: 12 }}>
               <Typography variant="h4" align="center" color="white">
-                engineer, consultant, and mentor
+                engineer, consultant, and mentor.
               </Typography>
             </Grid2>
             <Grid2 size={{ xs: 12 }} pt={2}>
               <Stack direction={"row"} spacing={2} justifyContent="center" alignItems="center">
-                <Button target="blank" href="https://github.com/mpiskunov">
+                <Button target="blank" href="https://github.com/mpiskunov/PortfolioSite">
                   <GitHubIcon fontSize="large" />
                 </Button>
                 <Button target="blank" href="https://www.linkedin.com/in/matthew-piskunov-230a881a9/">
