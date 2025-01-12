@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd portfolio-site/Portfolio-site
+            cd portfoliosite/PortfolioSite
             docker compose up -d
