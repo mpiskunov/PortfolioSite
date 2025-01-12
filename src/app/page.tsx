@@ -37,7 +37,7 @@ export default function Home() {
             </Grid2>
             <Grid2 size={{ xs: 12 }}>
               <Typography variant="h4" align="center" color="white">
-                engineer, consultant, and mentor
+                engineer, consultant, and mentor.
               </Typography>
             </Grid2>
             <Grid2 size={{ xs: 12 }} pt={2}>
