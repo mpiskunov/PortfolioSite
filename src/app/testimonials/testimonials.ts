@@ -19,7 +19,7 @@ export const testimonialArray: TestimonialInfo[] = [
     email: "erinwalter@microsoft.com",
     linkedInURL: "https://www.linkedin.com/in/erin-walter-19b9642b/",
     gitHubProfileURL: "https://github.com/erinmwalter",
-    portraitPath: "/hs2-modified.png",
+    portraitPath: "/erin_walter.jpg",
     testimonialText: `Matt was my mentor at Rocket Mortgage as an Associate Software Engineer and Software Engineer I. He
                       was great at breaking down new and challenging concepts to help me learn and grow in my engineering skills and with 
                       bringing me along to expose me to different topics like AWS infrastructure, creating a YML pipeline, or learning how 
