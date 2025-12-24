@@ -1,4 +1,3 @@
-"use client";
 import { Box, Button, Divider, Grid2, Stack, Typography, styled } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
